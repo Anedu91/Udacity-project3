@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+.form {
+  margin: 2rem 0;
+  width: 100%;
+}
+.holder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.holder:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.headline {
+  text-align: center;
+}
+.holder .title {
+  text-align: center;
+}
+.holder label {
+  margin-bottom: 0.5rem;
+}
+.holder input {
+  padding: 0.5rem 1rem;
+}
+.holder textarea {
+  padding: 0.5rem 1rem;
+}
+.holder button {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+.holder button:hover {
+  background: #000;
+}
+.entryHolder {
+  margin-top: 2rem;
+}
+.entryHolder h3 {
+  margin-bottom: 1rem;
+}
+.entryHolder h3 span {
+  transition: 0.5s all;
+}
